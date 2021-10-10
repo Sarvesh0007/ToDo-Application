@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: linear-gradient(120deg,#f6d365,#fda085);
+    background-image: linear-gradient(120deg,#187086ad,#fda085,rgba(52, 8, 77, 0.219));
     color: whitesmoke;
     font-family: "Poppins",sans-serif;
     min-height: 100vh;
@@ -14,7 +14,12 @@ body{
 }
 
 header{
-    font-size: 1.5rem;
+    font-size: 3rem;
+    opacity: 2;
+    margin-top: 7%;
+    color:whitesmoke;
+    
+   
 }
 
 form,header{
