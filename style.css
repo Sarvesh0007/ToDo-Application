@@ -5,9 +5,23 @@
 
 }
 
+.input-container{
+    margin: auto;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.input{
+    display: flex;
+}
+
 body{
-    background-image: linear-gradient(120deg,#187086ad,#fda085,rgba(52, 8, 77, 0.219));
-    color: whitesmoke;
+
+    background-color:rgb(36, 32, 32);
     font-family: "Poppins",sans-serif;
     min-height: 100vh;
   
@@ -28,13 +42,19 @@ form,header{
     min-height: 20vh;
     justify-content: center;
 }
+header{
+    font-size: 2.5rem;
+
+}
 form button,form input{
+    width: 100%;
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background-color: azure;
 }
 form button{
+    width: 20%;
     color: #fda085;
     background: white;
     cursor: pointer;
@@ -52,7 +72,7 @@ form button:hover{
     align-items: center;
 }
 .todo-list{
-    min-width: 30%;
+    min-width: 50%;
     list-style: none;
 }
 .todo{
@@ -115,6 +135,7 @@ select{
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
+    display: flexbox;
 }
 .select::after{
     content: "\25BC";
@@ -129,4 +150,41 @@ select{
 .select:hover::after{
     background: white;
     color: #cc4019;
+}
+
+
+@media only screen and (max-width:800px){
+    .input-container{
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    select{
+        color: #d63508;
+        width: 28.2rem;
+        cursor: pointer;
+        padding: 1rem;
+        display: flexbox;
+    }
+    .todo-list{
+    min-width: 28.2rem;
+    list-style: none;
+}
+}
+
+
+@media only screen and (max-width:500px){
+   
+    select{
+        color: #d63508;
+        width: 12.2rem;
+        cursor: pointer;
+        padding: 1rem;
+        display: flexbox;
+    }
+    .todo-list{
+        min-width: 100%;
+        list-style: none;
+    }
 }

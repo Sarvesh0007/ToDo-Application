@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,28 +14,32 @@
     <title>To DO APP</title>
 </head>
 <body>
-
-    <header><b>My Tasks</b>
-        &nbsp;
-        <i class="fas fa-thumbtack"></i>
+    <div>
+        <header><b>My Tasks</b>
+            &nbsp;
+            <i class="fas fa-thumbtack"></i>
+    </div>
+    
 
 </header>
 
 
 <form>
-    <input type="text" class="todo-input">
+<div class="input-container">
+  <div class="input">
+        <input type="text" class="todo-input">
     <button class="todo-button" type="submit">
         <i class="fas fa-plus-square"></i>
     </button>
+  </div>
     <div class="select">
         <select name="todos" class="filter-todo">
             <option value="all">ALL</option>
             <option value="completed">Completed</option>
             <option value="uncompleted">Uncompleted</option>
         </select>
-
-
     </div>
+</div>
 </form>
 <div class="todo-container">
     <ul class="todo-list"></ul>
